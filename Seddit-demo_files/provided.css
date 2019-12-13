@@ -1,0 +1,317 @@
+/* base styles, feel free to edit */
+:root {
+  --reddit-blue: #0079D3;
+  --reddit-orange: #FF5700;
+  --reddit-grey: rgba(0, 0, 0, 0.0975);
+  --reddit-light-grey:  rgba(0, 0, 0, 0.041);
+  --reddit-bg-color: #f1f1f7;
+  --body-text-size: 12px;
+  --alt-text-color:  rgba(0, 0, 0, 0.65);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--reddit-bg-color);
+  height: 100%;
+  font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer {
+  border-top: 1px solid var(--reddit-grey);
+  padding: 10px;
+  background-color: white;
+  min-height: 50px;
+  text-align: right;
+}
+
+.alt-text {
+  color: var(--alt-text-color);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  min-height: 50px;
+  border-bottom: 1px solid var(--reddit-grey);
+}
+
+#logo {
+  color: white;
+  font-size: var(--body-text-size);
+  width: 40px;
+  height: 40px;
+  background-color: var(--reddit-orange);
+  border-radius: 50%;
+}
+
+#search {
+  background-color: var(--reddit-bg-color);
+  font: inherit;
+  font-size: var(--body-text-size);
+  border: none;
+  padding: 7.5px 15px;
+  outline: none;
+  border: 1px solid var(--reddit-grey);
+  border-radius: 4px;
+}
+
+#search::placeholder {
+  letter-spacing: 0.5px;
+  font-size: var(--body-text-size);
+}
+
+#search:focus {
+  background-color: white;
+  border-color: var(--reddit-blue);
+}
+
+.button {
+  border: 1px solid var(--reddit-blue);
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 7.5px 15px;
+  font-weight: bold;
+}
+
+.button-primary {
+  color: var(--reddit-blue);
+}
+
+.button-secondary {
+  background-color: var(--reddit-blue);
+  color: white;
+}
+
+.button-tertiary {
+  background-color: var(--reddit-orange);
+  border: 1px solid grey;
+  color: white;
+}
+
+.button-feed {
+  background-color: var(--reddit-blue);
+  color: white;
+}
+
+.banner > *,
+footer > * {
+  margin: 10px 25px;
+}
+
+.nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  margin: auto;
+  padding: 5px;
+  display: inline;
+  list-style-type: none;
+}
+
+#feed {
+  min-width: 500px;
+  max-width: 800px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 0;
+}
+
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed-title {
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Add your styles here */
+/* Styling for login form  */
+.login {
+  background-color:rgb(24, 126, 139);
+  text-align: center;
+  padding: 10px;
+  font-size: 11px;
+  font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color:white;
+}
+
+/* Styling for sign up form */
+.reg {
+  background-color: rgb(35, 172, 103);
+  text-align: center;
+  padding: 10px;
+  font-size: 11px;
+  font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color:white;
+}
+
+/* Comment button styling */
+.post-comment-button {
+  float: right;
+  padding-right: 5px;
+}
+
+/* Style for icons to interact with mouse over */
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* Style for icons to interact with mouse over */
+.material-icons:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* Style for comments */
+#comments_feed {
+  min-width: 500px;
+  max-width: 800px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 0;
+}
+
+.comment {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin: 20px 0;
+  background-color: white;
+  border: 1px solid var(--reddit-grey);
+}
+
+.comment-text {
+  color: grey;
+  background-color: var(--reddit-grey);
+  font-size: 12px;
+  width: 100%;
+
+  padding: 5px;
+}
+
+.comment-title {
+  color: white;
+  background-color: grey;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+
+  padding:5px;  
+}
+
+.comment-time {
+  float: right;
+  padding-right: 5px;
+}
+
+.comment-banner {
+  color: black;
+  background-color: white;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Style for post message forms */
+#message-form{
+  text-align: center;
+}
+
+.message-input{
+  padding: 5px;
+  color: var(--alt-text-color);
+  font-weight: bold;
+}
+
+.text-box {
+  background-color: var(--reddit-bg-color);
+  font: inherit;
+  font-size: var(--body-text-size);
+  font-weight: normal;
+  border: none;
+  padding: 7.5px 15px;
+  outline: none;
+  border: 1px solid var(--reddit-grey);
+  border-radius: 4px;
+  width: 50%;
+}
+
+.search {
+  background-color: var(--reddit-bg-color);
+  font: inherit;
+  font-size: var(--body-text-size);
+  border: none;
+  padding: 7.5px 15px;
+  outline: none;
+  border: 1px solid var(--reddit-grey);
+  border-radius: 4px;
+  font-weight: normal;
+}
+
+.search::placeholder {
+  letter-spacing: 0.5px;
+  font-size: var(--body-text-size);
+}
+
+.search:focus {
+  background-color: white;
+  border-color: var(--reddit-blue);
+}
+
+/* Style for token in footer */
+#token {
+  font-size: 9px;
+}
+
+/* Style for End of feed Message */ 
+#end_message {
+  text-align: center;
+}
+
+/* Style for comment forms */
+#comment-form {
+  text-align: center;
+}
+
+.comment-profile {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin: 20px 0;
+  background-color: white;
+}
+
+/* Style for comments in profile pages */
+#profile_feed {
+  min-width: 500px;
+  max-width: 800px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 0;
+}
+
+/* Style for followed List Header */
+.followed-header {
+  text-align: center;
+  margin-bottom: 0;
+}
